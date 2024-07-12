@@ -92,7 +92,7 @@ body {
   /* Show close icon animation when menu is open */
   .change .bar:nth-child(1) {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6.2px);
   }
 
   .change .bar:nth-child(2) {
@@ -105,81 +105,28 @@ body {
   }
 }
 
+/* 右側に配置するためのスタイル */
+.navbar {
+  position: relative;
+}
 
-
-
-
-
-/*========= 上部固定させるためのCSS ===============*/
-#header{
-  height: 70px;/*高さ指定*/
-  width:100%;/*横幅指定*/
-  /*以下はレイアウトのためのCSS*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:#333;
-  color:#fff;
-  text-align: center;
-  padding: 20px;
+.hamburger-menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 
 
 
-/*========= レイアウトのためのCSS ===============*/
-
-h1{
-  font-size:1.2rem;
-}
-
-h2{
-  font-size:1.2rem;
-  text-align: center;
-  margin: 0 0 30px 0;
-}
-
-p{
-  margin-top:20px;  
-}
-
-small{
-  background:#333;
-  color:#fff;
-  display: block;
-  text-align: center;
-  padding:20px;
-}
 
 
 
-nav ul{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li a{
-  display: block;
-  text-decoration: none;
-  color: #666;
-  padding:10px;
-  transition:all 0.3s;
-}
-
-nav ul li.current a,
-nav ul li a:hover{
-  color:#6a40b9; 
-}
 
 
-section{
-  padding:30px;
-}
 
-section:nth-child(2n){
-  background:#f3f3f3; 
-}
+
+
 
 
 
@@ -210,15 +157,6 @@ img {
 
 
 
-/* レイアウト */
-.wrapper {
-    max-width: 1120px;
-    margin: auto;
-    padding: 0 1.5rem;
-}
-.align-center {
-    text-align: center;
-}
 
 /* 見出し */
 .font-english {
