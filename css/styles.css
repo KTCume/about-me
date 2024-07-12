@@ -4,6 +4,112 @@
 
 @charset "utf-8";
 
+/* styles.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.site-nav ul li {
+  margin-right: 20px;
+}
+
+.site-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.site-nav ul li a:hover {
+  color: #666;
+}
+
+.hamburger-menu {
+  display: none; /* Initially hide on larger screens */
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    display: none; /* Hide the nav items by default on smaller screens */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+  }
+
+  .site-nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on smaller screens */
+  }
+
+  /* Show close icon animation when menu is open */
+  .change .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+
+
+
+
+
 /*========= 上部固定させるためのCSS ===============*/
 #header{
   height: 70px;/*高さ指定*/
