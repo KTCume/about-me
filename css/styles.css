@@ -316,7 +316,7 @@ body {
 .content {
   flex: 1;
 }
-.copyright {
+.footer {
     background-color: rgb(5, 5, 5);
     color: #fff;
     text-align: center;
