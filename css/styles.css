@@ -32,9 +32,6 @@ main {
 
 
 
-
-
-
 /* Reset some default styles */
 * {
   margin: 0;
@@ -80,7 +77,7 @@ body {
 }
 
 .hamburger-menu {
-  display: none; /* Initially hide on larger screens */
+  display: none; /* 初期画面非表示 */
   cursor: pointer;
 }
 
@@ -115,7 +112,7 @@ body {
   }
 
   .hamburger-menu {
-    display: block; /* Show hamburger menu on smaller screens */
+    display: block; /* 小さい画面でハンバーガーメニュー表示 */
   }
 
   /* Show close icon animation when menu is open */
@@ -280,6 +277,7 @@ img {
 .icon {
   width: 50px; /* iconのサイズを変更 */
   height: 50px; 
+  margin-inline-start: 10px;
 }
 
 
@@ -339,4 +337,47 @@ img {
     padding: 2rem 0;
     margin-top: 6rem;
     color: #fff;
+}
+
+
+
+
+
+
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
