@@ -306,38 +306,25 @@ img {
 
 /* フッター
 --------------------------------- */
-.page-footer {
-    background-image: url(../images/footer-s.webp);
-    background-size: cover;
-    background-position: center;
-    padding-top: 12rem;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
-.info {
-    width: 100%;
-    max-width: 544px;
-    margin: auto;
-    padding: 0 1.5rem;
-    border-spacing: 0;
-}
-.info th,
-.info td {
-    border-bottom: 1px solid #c9c2bc;
-}
-.info th {
-    text-align: left;
-    font-weight: noemal;
-    padding: 1rem;
-}
-.info td {
-    padding: 1rem 0;
+.content {
+  flex: 1;
 }
 .copyright {
     background-color: rgb(5, 5, 5);
+    color: #fff;
     text-align: center;
     padding: 2rem 0;
     margin-top: 6rem;
-    color: #fff;
 }
+
+
 
 
 
