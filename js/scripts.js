@@ -10,6 +10,7 @@ hamburgerMenu.addEventListener('click', () => {
   siteNav.classList.toggle('show'); // ナビゲーションメニューの表示・非表示を切り替え
 });
 
+
 // jQueryでスライダーの設定を行う
 $('.slider').slick({
   autoplay: true, // 自動的に動き出すか。初期値はfalse。

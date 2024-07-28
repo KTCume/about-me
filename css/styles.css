@@ -139,6 +139,10 @@ body {
 
 
 
+
+
+
+
 /* スライダーのためのCSS */
 .slider {
   width: 94%; /* 横幅94%で左右に余白を持たせて中央寄せ */
@@ -208,6 +212,10 @@ body {
 .slick-dots .slick-active button {
   background: #333; /* ドットボタンの現在地表示の色 */
 }
+
+
+
+
 
 /* レイアウトのためのCSS */
 body {
