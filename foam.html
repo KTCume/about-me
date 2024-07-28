@@ -38,20 +38,44 @@
         </div>
     </header>
 
+
+
     <div class="content">
-        <!-- ここにコンテンツが入ります -->
+    <!-- ここにコンテンツが入ります -->
+    </div>
+        <script src="script.js"></script>
+
+
+
+
+<div class="container">
+        <h1>お問い合わせフォーム</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">送信</button>
+        </form>
     </div>
 
-    <div>
-        <h2 class="page-title font-english"></h2>
-    </div>
 
 
 
-    <footer class="footer">
-        <small>&copy; 2024 自己紹介</small>
+
+
+
+
+    <footer>
+        <div class="copyright">
+            <small>&copy; 2024 自己紹介</small>
+        </div>
     </footer>
-
-
+    <script src="js/scripts.js">梅井太貴</script>
 </body>
 </html>
