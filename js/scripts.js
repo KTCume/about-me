@@ -10,6 +10,7 @@ hamburgerMenu.addEventListener('click', () => {
   siteNav.classList.toggle('show'); // ナビゲーションメニューの表示・非表示を切り替え
 });
 
+
 (function() {
   // スライドとコントロールの要素を取得
   var $slides = document.querySelectorAll('.slide');

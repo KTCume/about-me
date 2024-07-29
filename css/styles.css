@@ -136,6 +136,7 @@ body {
   display: block;
 }
 
+
 /* スライドショーのスタイル */
 *, *:before, *:after {
   box-sizing: border-box; /* ボックスモデルを border-box に設定し、要素のパディングやボーダーが幅や高さに含まれるようにする */
