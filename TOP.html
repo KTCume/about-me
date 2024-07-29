@@ -8,11 +8,9 @@
     <!-- Reset CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     
-    <!-- Custom Styles --><!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/css/6-1-7.css">
+
 </head>
 
 <body>
@@ -46,25 +44,79 @@
         <h2 class="page-title font-english"></h2>
     </div>
 
-    <ul class="slider">
-        <li><img src="images/Image.jpg" alt=""></li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg" alt=""></li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg" alt=""></li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg" alt=""></li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg" alt=""></li>
-        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg" alt=""></li>
-    </ul>
     
-    <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a></p>
+
+
+
+
+
+
+
+
+    <!-- スライダーセクション -->
+    <div class="slider">
+        <!-- スライド -->
+        <div class="slider__slides">
+            <div class="slide s--active">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Clip-Path Revealing Slider</h2>
+                        <p class="slide__text">Greetings, Traveler!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Simple Animation</h2>
+                        <p class="slide__text">Clip-path magic!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Very Stylish Effect!</h2>
+                        <p class="slide__text">It looks cool, isn't it?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Limited browser support</h2>
+                        <p class="slide__text">Forget about IE/Edge and FF</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide s--prev">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Check my other stuff!</h2>
+                        <p class="slide__text"><a href="https://codepen.io/suez/pens/public/" target="_blank">Other demos</a> and <a href="https://twitter.com/NikolayTalanov" target="_blank">Twitter</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- スライド終了 -->
+        <!-- スライダーコントロール -->
+        <div class="slider__control">
+            <div class="slider__control-line"></div>
+            <div class="slider__control-line"></div>
+        </div>
+        <div class="slider__control slider__control--right m--right">
+            <div class="slider__control-line"></div>
+            <div class="slider__control-line"></div>
+        </div>
+    </div>
+    
+
     
     <footer class="footer">
         <small>&copy; 2024 自己紹介</small>
     </footer>
 
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

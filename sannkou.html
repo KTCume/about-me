@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    
+    <!-- Custom Styles --><!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/css/6-1-7.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="align-center">
+                <a href="TOP.html"><img class="icon" src="images/icon.jpg" alt="icon"></a>
+            </h1>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="site-nav">
+                <ul class="main-nav font-english">
+                    <li><a href="shoukai.html">自己紹介ページ</a></li>
+                    <li><a href="ONE PIECE.html">ONE PIECE</a></li>
+                    <li><a href="game.html">ゲーム</a></li>
+                    <li><a href="KPOP.html">KPOP</a></li>
+                    <li><a href="foam.html">お問い合わせフォーム</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <!-- ここにコンテンツが入ります -->
+    </div>
+
+    <div>
+        <h2 class="page-title font-english"></h2>
+    </div>
+
+    <ul class="slider">
+        <li><img src="images/Image.jpg" alt=""></li>
+        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg" alt=""></li>
+        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg" alt=""></li>
+        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg" alt=""></li>
+        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg" alt=""></li>
+        <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg" alt=""></li>
+    </ul>
+    
+    <p>使用したライブラリ：<a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a></p>
+    
+    <footer class="footer">
+        <small>&copy; 2024 自己紹介</small>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+@charset "utf-8"; /* 文字エンコーディングの設定 */
+
+/* 基本のスタイル */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  position: fixed; /* 固定ヘッダーにする */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #ffffff;
+  color: rgb(232, 222, 222);
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000; /* 他のコンテンツの上に表示するための設定 */
+}
+
+main {
+  margin-top: 60px; /* 固定ヘッダーの高さ分だけマージンを追加 */
+  padding: 20px;
+}
+
+/* デフォルトスタイルのリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.site-nav ul li {
+  margin-right: 20px;
+}
+
+.site-nav ul li a {
+  text-decoration: none;
+  color: #141313;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.site-nav ul li a:hover {
+  color: #1f72d6;
+}
+
+.hamburger-menu {
+  display: none; /* 初期画面非表示 */
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #151414;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* 小さな画面向けのメディアクエリ */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    display: none; /* デフォルトではナビゲーションを非表示 */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+  }
+
+  .site-nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hamburger-menu {
+    display: block; /* 小さい画面でハンバーガーメニューを表示 */
+  }
+
+  /* メニューオープン時のアニメーション */
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 4.5px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+/* 右側に配置するためのスタイル */
+.navbar {
+  position: relative;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/* メニューが表示されている時のスタイル */
+.site-nav.show {
+  display: block;
+}
+
+
+/* スライダーのためのCSS */
+.slider {
+  width: 94%; /* 横幅94%で左右に余白を持たせて中央寄せ */
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 60vw; /* スライダー内の画像を60vwにしてレスポンシブ化 */
+  height: auto;
+}
+
+.slider .slick-slide {
+  transform: scale(0.8); /* 左右の画像のサイズを80%に */
+  transition: all 0.5s; /* 拡大や透過のアニメーションを0.5秒で行う */
+  opacity: 0.5; /* 透過50% */
+}
+
+.slider .slick-slide.slick-center {
+  transform: scale(1); /* 中央の画像のサイズだけ等倍に */
+  opacity: 1; /* 透過なし */
+}
+
+/* 矢印の設定 */
+.slick-prev,
+.slick-next {
+  position: absolute; /* 絶対配置にする */
+  top: 42%;
+  cursor: pointer; /* マウスカーソルを指マークに */
+  outline: none; /* クリックをしたら出てくる枠線を消す */
+  border-top: 2px solid #666; /* 矢印の色 */
+  border-right: 2px solid #666; /* 矢印の色 */
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  left: -1.5%; /* 戻る矢印の位置と形状 */
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%; /* 次へ矢印の位置と形状 */
+  transform: rotate(45deg);
+}
+
+/* ドットナビゲーションの設定 */
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px; /* ドットボタンのサイズ */
+  height: 8px; /* ドットボタンのサイズ */
+  display: block;
+  border-radius: 50%;
+  background: #ccc; /* ドットボタンの色 */
+}
+
+.slick-dots .slick-active button {
+  background: #333; /* ドットボタンの現在地表示の色 */
+}
+
+/* レイアウトのためのCSS */
+body {
+  background: #eee;
+}
+
+h2, p {
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino kaku gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.icon {
+  width: 50px; /* アイコンのサイズを変更 */
+  height: 50px;
+  margin-inline-start: 10px;
+}
+
+/* 見出し */
+.font-english {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: normal;
+}
+
+.page-title,
+.heading-large {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.page-title {
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+
+.heading-large {
+  margin-bottom: 1rem;
+  background-color: lightblue;
+  color: white;
+}
+
+/* フッター */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  background-color: rgb(5, 5, 5);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 6rem;
+}
+
+
+/*お問い合わせ*/
+.contact-form-container {
+  background-color: #f3eded;
+  padding: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 2000px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+
+
+
+
+
+
+
+
+
+// script.js
+
+// ハンバーガーメニューとサイトナビゲーションの要素を取得
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const siteNav = document.querySelector('.site-nav');
+
+// ハンバーガーメニューがクリックされたときのイベントリスナーを追加
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerMenu.classList.toggle('change'); // ハンバーガーメニューのアニメーションを切り替え
+  siteNav.classList.toggle('show'); // ナビゲーションメニューの表示・非表示を切り替え
+});
+
+
+// jQueryでスライダーの設定を行う
+$('.slider').slick({
+  autoplay: true, // 自動的に動き出すか。初期値はfalse。
+  infinite: true, // スライドをループさせるかどうか。初期値はtrue。
+  speed: 500, // スライドのスピード。初期値は300。
+  slidesToShow: 3, // スライドを画面に3枚見せる
+  slidesToScroll: 1, // 1回のスクロールで1枚の写真を移動して見せる
+  prevArrow: '<div class="slick-prev"></div>', // 矢印部分PreviewのHTMLを変更
+  nextArrow: '<div class="slick-next"></div>', // 矢印部分NextのHTMLを変更
+  centerMode: true, // 要素を中央ぞろえにする
+  variableWidth: true, // 幅の違う画像の高さを揃えて表示
+  dots: true, // 下部ドットナビゲーションの表示
+});

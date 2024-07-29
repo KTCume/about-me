@@ -136,101 +136,228 @@ body {
   display: block;
 }
 
-
-/* スライダーのためのCSS */
-.slider {
-  width: 94%; /* 横幅94%で左右に余白を持たせて中央寄せ */
-  margin: 0 auto;
+/* スライドショーのスタイル */
+*, *:before, *:after {
+  box-sizing: border-box; /* ボックスモデルを border-box に設定し、要素のパディングやボーダーが幅や高さに含まれるようにする */
+  margin: 0; /* 要素の外側の余白を 0 に設定 */
+  padding: 0; /* 要素の内側の余白を 0 に設定 */
 }
 
-.slider img {
-  width: 60vw; /* スライダー内の画像を60vwにしてレスポンシブ化 */
-  height: auto;
-}
-
-.slider .slick-slide {
-  transform: scale(0.8); /* 左右の画像のサイズを80%に */
-  transition: all 0.5s; /* 拡大や透過のアニメーションを0.5秒で行う */
-  opacity: 0.5; /* 透過50% */
-}
-
-.slider .slick-slide.slick-center {
-  transform: scale(1); /* 中央の画像のサイズだけ等倍に */
-  opacity: 1; /* 透過なし */
-}
-
-/* 矢印の設定 */
-.slick-prev,
-.slick-next {
-  position: absolute; /* 絶対配置にする */
-  top: 42%;
-  cursor: pointer; /* マウスカーソルを指マークに */
-  outline: none; /* クリックをしたら出てくる枠線を消す */
-  border-top: 2px solid #666; /* 矢印の色 */
-  border-right: 2px solid #666; /* 矢印の色 */
-  height: 15px;
-  width: 15px;
-}
-
-.slick-prev {
-  left: -1.5%; /* 戻る矢印の位置と形状 */
-  transform: rotate(-135deg);
-}
-
-.slick-next {
-  right: -1.5%; /* 次へ矢印の位置と形状 */
-  transform: rotate(45deg);
-}
-
-/* ドットナビゲーションの設定 */
-.slick-dots {
-  text-align: center;
-  margin: 20px 0 0 0;
-}
-
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.slick-dots button {
-  color: transparent;
-  outline: none;
-  width: 8px; /* ドットボタンのサイズ */
-  height: 8px; /* ドットボタンのサイズ */
-  display: block;
-  border-radius: 50%;
-  background: #ccc; /* ドットボタンの色 */
-}
-
-.slick-dots .slick-active button {
-  background: #333; /* ドットボタンの現在地表示の色 */
-}
-
-/* レイアウトのためのCSS */
 body {
-  background: #eee;
+  font-family: Helvetica, Arial, sans-serif; /* フォントファミリーを Helvetica、Arial、またはサンセリフ体に設定 */
+  display: flex; /* body 要素をフレックスボックスコンテナとして設定 */
+  flex-direction: column; /* フレックスアイテムを縦に並べるように設定 */
+  min-height: 100vh; /* body 要素の最小高さをビューポートの高さの 100% に設定 */
+  margin: 0; /* body 要素の外側の余白を 0 に設定 */
 }
 
-h2, p {
-  text-align: center;
-  padding: 20px;
+
+/* スライダーの高さを調整 */
+.slider {
+  flex: 1; /* スライドショーが残りのスペースを占めるように */
+  position: relative;
+  margin-bottom: 100px; /* フッターの表示を確保 */
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/* スライドコンテナのスタイル */
+.slider__slides {
+  z-index: 1; /* スライドが上に表示されるように */
+  position: relative;
+  height: 100%; /* スライドコンテナの高さを親要素に合わせる */
 }
 
-a {
-  color: #333;
+/* スライダーのコントロール（次へ・前へボタン）のスタイル */
+.slider__control {
+  z-index: 2; /* コントロールがスライドの上に表示されるように */
+  position: absolute;
+  top: 50%; /* 垂直方向の中央に配置 */
+  left: 5%; /* 水平方向の位置を調整 */
+  width: 60px;
+  height: 60px;
+  margin-left: -30px; /* ボタンの中央に配置するための調整 */
+  margin-top: -30px; /* ボタンの中央に配置するための調整 */
+  border-radius: 50%; /* 円形にする */
+  background: #fff; /* 背景色を白に設定 */
+  transition: background-color 0.3s; /* 背景色の変更にアニメーションを追加 */
+  cursor: pointer; /* カーソルがポインタに変わる */
 }
 
-a:hover,
-a:active {
-  text-decoration: none;
+/* 次のスライドボタンの位置調整 */
+.slider__control--right {
+  left: 95%; /* 右側に配置 */
 }
+
+/* コントロールボタンにマウスを乗せたときのスタイル */
+.slider__control:hover {
+  background-color: #2da6ff; /* 背景色を青に変更 */
+}
+
+/* コントロールボタンの矢印ラインのスタイル */
+.slider__control-line {
+  position: absolute;
+  left: 23px;
+  top: 50%;
+  width: 3px;
+  height: 14px;
+  transform-origin: 50% 0; /* 回転の基点を設定 */
+  transform: rotate(-45deg); /* 初期状態で左下に向ける */
+}
+
+/* 矢印の二本目のラインのスタイル */
+.slider__control-line:nth-child(2) {
+  transform: translateY(1px) rotate(-135deg); /* 位置と角度を調整 */
+}
+
+/* 次のスライドボタンの矢印ラインのスタイル */
+.slider__control--right .slider__control-line {
+  left: 37px;
+  transform-origin: 1px 0; /* 回転の基点を変更 */
+  transform: rotate(45deg); /* 初期状態で右上に向ける */
+}
+
+/* 次のスライドボタンの二本目の矢印ラインのスタイル */
+.slider__control--right .slider__control-line:nth-child(2) {
+  transform: translateY(1px) rotate(135deg); /* 位置と角度を調整 */
+}
+
+/* 矢印ラインの背景色設定 */
+.slider__control-line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2; /* 背景色を灰色に設定 */
+  transition: background-color 0.3s; /* 背景色の変更にアニメーションを追加 */
+}
+
+/* コントロールボタンにマウスを乗せたときの矢印ラインの背景色変更 */
+.slider__control:hover .slider__control-line:after {
+  background-color: #fff; /* 背景色を白に変更 */
+}
+
+/* コントロールボタンが回転するアニメーション */
+.slider__control.a--rotation .slider__control-line:after {
+  animation: arrowLineRotation 0.49s; /* 回転アニメーションを適用 */
+}
+
+/* コントロールボタンの矢印ラインが逆回転するアニメーション */
+.slider__control.a--rotation .slider__control-line:nth-child(1):after {
+  animation: arrowLineRotationRev 0.49s; /* 逆回転アニメーションを適用 */
+}
+
+/* 矢印ラインの回転アニメーション */
+@keyframes arrowLineRotation {
+  to {
+    transform: rotate(180deg); /* 180度回転 */
+  }
+}
+
+/* 矢印ラインの逆回転アニメーション */
+@keyframes arrowLineRotationRev {
+  to {
+    transform: rotate(-180deg); /* -180度回転 */
+  }
+}
+
+/* 各スライドのスタイル */
+.slide {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150vmax; /* スライドの幅をビューポートの最大サイズに合わせる */
+  height: 250vmax; /* スライドの高さをビューポートの最大サイズに合わせる */
+  transform: translate(-50%, -50%); /* スライドを中央に配置 */
+  border-radius: 50%; /* 円形にする */
+  transition: clip-path 0s 0.91s; /* クリップパスの変更に遅延を追加 */
+  clip-path: circle(30px at 120vw 50%); /* スライドを円形で切り抜く */
+}
+
+/* 前のスライドのスタイル */
+.slide.s--prev {
+  clip-path: circle(30px at 30vw 50%); /* スライドを円形で切り抜く位置を変更 */
+}
+
+/* アクティブなスライドのスタイル */
+.slide.s--active {
+  z-index: 1; /* アクティブなスライドが他のスライドの上に表示されるように */
+  transition: clip-path 1.3s; /* クリップパスの変更にアニメーションを追加 */
+  clip-path: circle(120vmax at 120vw 50%); /* スライドを円形で切り抜くサイズを変更 */
+}
+
+/* 前のスライドがアクティブなスライドのスタイル */
+.slide.s--active.s--active-prev {
+  clip-path: circle(120vmax at 30vw 50%); /* スライドを円形で切り抜く位置を変更 */
+}
+
+/* 各スライドの背景画像設定 */
+.slide:nth-child(1) .slide__inner {
+  background-image: url("../images/Image.jpg");
+}
+
+.slide:nth-child(2) .slide__inner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg");
+}
+
+.slide:nth-child(3) .slide__inner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");
+}
+
+.slide:nth-child(4) .slide__inner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg");
+}
+
+.slide:nth-child(5) .slide__inner {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-6.jpg");
+}
+
+.slide__inner {
+  position: absolute; /* 親要素に対して絶対位置を指定 */
+  left: 50%; /* 左から50%の位置に配置 */
+  top: 60%; /* 上から50%の位置に配置 */
+  width: 100vw; /* ビューポートの幅に合わせる */
+  height: 100vh; /* ビューポートの高さに合わせる */
+  margin-left: -50vw; /* 左から-50vwの位置に調整（中央寄せ） */
+  margin-top: -50vh; /* 上から-50vhの位置に調整（中央寄せ） */
+  background-size: cover; /* 背景画像を要素のサイズに合わせて拡大・縮小 */
+  background-position: center center; /* 背景画像を中央に配置 */
+}
+
+.slide__inner:before {
+  content: ""; /* 空のコンテンツを生成 */
+  position: absolute; /* 親要素に対して絶対位置を指定 */
+  left: 0; /* 左から0の位置に配置 */
+  top: 0; /* 上から0の位置に配置 */
+  width: 100%; /* 幅を親要素に合わせる */
+  height: 100%; /* 高さを親要素に合わせる */
+  background: rgba(0, 0, 0, 0.3); /* 半透明の黒い背景を設定 */
+}
+
+.slide__content {
+  position: absolute; /* 親要素に対して絶対位置を指定 */
+  left: 5%; /* 左から5%の位置に配置 */
+  top: 50%; /* 上から50%の位置に配置 */
+  margin-left: -30px; /* 左から-30pxの位置に調整 */
+  margin-top: 48px; /* 上から48pxの位置に調整 */
+  max-width: 480px; /* 最大幅を480pxに設定 */
+  color: #fff; /* 文字色を白に設定 */
+}
+
+.slide__heading {
+  margin-bottom: 20px; /* 下部に20pxのマージンを設定 */
+  font-size: 60px; /* フォントサイズを60pxに設定 */
+}
+
+.slide__text {
+  font-size: 25px; /* フォントサイズを25pxに設定 */
+}
+
+.slide__text a {
+  color: inherit; /* リンクの文字色を親要素と同じに設定 */
+}
+
 
 /* 共通部分 */
 html {
@@ -281,34 +408,28 @@ img {
 }
 
 /* フッター */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.content {
-  flex: 1;
-}
-
 .footer {
   background-color: rgb(5, 5, 5);
   color: #fff;
   text-align: center;
   padding: 2rem 0;
-  margin-top: 6rem;
+  position: fixed; /* フッターを画面下部に固定 */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* フッターのz-indexを高く設定 */
 }
+
 
 
 /*お問い合わせ*/
 .contact-form-container {
-  background-color: #fff;
-  padding: 20px;
+  background-color: #f3eded;
+  padding: 200px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
+  max-width: 2000px;
   box-sizing: border-box;
 }
 
