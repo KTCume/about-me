@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     
+    
     <!-- Reset CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     
-    <!-- Custom Styles --><!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/css/6-1-7.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/srid2.css">
+    <link rel="stylesheet" href="css/boot.css" >
+
+
+
 </head>
 
 <body>
@@ -38,20 +46,210 @@
         </div>
     </header>
 
-    <div class="content">
-        <!-- ここにコンテンツが入ります -->
+
+
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/ive.jpg" alt="1" loading="lazy">
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <iframe width="560" height="315" src="https://youtu.be/9adnWMIVHQ0?si=QuMHXfo2mWY9x98Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>PAL GYM Training Room</h2>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Tab Menu  swiper　world.cssに書いてる　scripts.jsに書いてある -->
+    <div class="tab-container" id="tab-container-1">
+      <ul class="tab-menu">
+          <li class="tab-link active" data-tab="tab1">IVE</li>
+          <li class="tab-link" data-tab="tab2">NMIXX</li>
+          <li class="tab-link" data-tab="tab3">BABYMONSTER</li>
+      </ul>
+      <div class="tab-content">
+          <div id="tab1" class="tab-pane active">
+              <h2>IVEのメンバー</h2>
+              <div class="sub-content-container">
+                  <div class="sub-content">
+                      <img src="https://ive-official.jp/img/1/kiji/1/MAI/N_2/662/MAIN_266226_1_jpg.jpg" loading="lazy" alt="イギリス、ビッグ・ベン">
+                      <h3>ユジン</h3>
+                      <p>aaaaa</p>
+                  </div>
+                  <div class="sub-content">
+                      <img src="https://cdn.getyourguide.com/img/location/59621e4cbc9db.jpeg/88.jpg" loading="lazy" alt="フランス、シャンボール城">
+                      <h3>ガウル</h3>
+                  </div>
+                  <div class="sub-content">
+                      <img src="https://www.24taiwan.com/wp-content/uploads/2018/09/DSC06520.jpg" loading="lazy" alt="ドイツ、ノイシュヴァンシュタイン城">
+                      <h3>レイ</h3>
+                  </div>
+                  <div class="sub-content">
+                      <img src="https://wallpapercave.com/wp/wp4850745.jpg" loading="lazy" alt="スペイン、サグラダ・ファミリア">
+                      <h3>ウォニョン</h3>
+                  </div>
+                  <div class="sub-content">
+                      <img src="https://p8.itc.cn/images01/20210108/8ef395cbe81648ccb5c4fd9ce8d5b6ba.jpeg" loading="lazy" alt="イタリア、アマルフィ海岸">
+                      <h3>リズ</h3>
+                  </div>
+                  <div class="sub-content">
+                      <img src="https://www.fjords.com/wp-content/uploads/2023/02/urnes_stave_church_lustrafjord_sognefjord-2000x1200.jpg" loading="lazy" alt="ノルウェー、ウルネスの木造教会">
+                      <h3>イソ</h3>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    <div id="tab2" class="tab-pane">
+      <h2>NMIXXのメンバー</h2>
+
+      <div class="sub-content-container">
+          <!-- 世界遺産 1 -->
+          <div class="sub-content">
+              <img src="https://tmyun.com/jpeg/yun_13884.jpg" loading="lazy" alt="万里の長城">
+              <h3>へウォン</h3>
+          </div>
+          <!-- 世界遺産 2 -->
+          <div class="sub-content">
+              <img src="https://image.ganref.jp/photos/members/sorita-2020/MDAwMDA1ODY3MQ_MC40Nzc5MjUwMCAxNjM4OTY5Nzgx_MTQ0Nzc5_3.jpg" loading="lazy" alt="清水寺">
+              <h3>リリー</h3>
+          </div>
+          <!-- 世界遺産 3 -->
+          <div class="sub-content">
+              <img src="https://tmyun.com/jpeg/yun_4987.jpg" loading="lazy" alt="宗廟">
+              <h3>ソリュン</h3>
+              <p>agsfgayufgyua</p>
+          </div>
+
+          <!-- 世界遺産 4 -->
+          <div class="sub-content">
+              <img src="https://www.immigration-residency.com/wp-content/uploads/2019/12/angkor-wat-temple.jpg" loading="lazy" alt="アンコールワット">
+              <h3>ベイ</h3>
+          </div>
+
+          <!-- 世界遺産 5 -->
+          <div class="sub-content">
+              <img src="https://res.cloudinary.com/dk0ndttcl/image/upload/q_auto:eco/v1/stw/gnl2pivpctxf6jiusmz1" loading="lazy" alt="ハロン湾">
+              <h3>ジウ</h3>
+          </div>
+
+          <!-- 世界遺産 6 -->
+          <div class="sub-content">
+              <img src="https://www.wallpics.net/wp-content/uploads/2022/08/Singapore-Wallpapers.jpg" loading="lazy" alt="シンガポール植物園">
+              <h3>ギュジン</h3>
+          </div>
+        </div>
     </div>
 
-    <div>
-        <h2 class="page-title font-english"></h2>
-    </div>
+    <div id="tab3" class="tab-pane">
+      <h2>BABYMONSTERのメンバー</h2>
+      <div class="sub-content-container">
+          <div class="sub-content">
+              <img src="https://worldoneit.com/wp-content/uploads/2020/01/20190503_150423.jpg" loading="lazy" alt="エジプト、カイロの歴史的都市">
+              <h3>ルカ</h3>
+              <p>
+                  エジプトのカイロの歴史的市街は、中世からのイスラム建築の宝庫で、
+                  多くのモスク、マドラサ、城塞が点在しています。
+                  特にモハメド・アリ・モスクやカーン・エル・カリリ市場が有名で、
+                  古代と現代が融合する魅力的なエリアです。
+              </p>
+          </div>
+          <div class="sub-content">
+              <img src="https://res.cloudinary.com/dk0ndttcl/image/upload/q_auto:eco/v1/stw/oryo3oin76uemkae3jbd" loading="lazy" alt="チュニジア、エル・ジェムのローマ劇場">
+              <h3>パリタ</h3>
+              <p>
+                  チュニジアのエル・ジェムのローマ劇場は、紀元3世紀に建設された円形闘技場で、
+                  約3万5000人を収容可能です。
+                  保存状態が非常に良く、古代ローマの建築技術と芸術を今に伝えています。
+                  アフリカ北部におけるローマ帝国の重要な遺産です。
+              </p>
+          </div>
+          <div class="sub-content">
+              <img src="https://images.microcms-assets.io/assets/14d13bd618dc45c7b684223c0ca9d033/2a52cd82707b4db09611c509f734986f/mariola-grobelska-LAidV_89ORo-unsplash%20(2).jpg" loading="lazy" alt="タンザニア、セレンゲティ国立公園">
+              <h3>アサ</h3>
+              <p>
+                  タンザニアのセレンゲティ国立公園は、広大なサバンナと多様な野生動物で知られています。
+                  特に、毎年のヌーやシマウマの大移動が有名で、
+                  これに伴う捕食動物とのドラマも魅力です。世界有数の生態系が保たれています。
+              </p>
+          </div>
+          <div class="sub-content">
+              <img src="https://data.world-surfing.jp/wp-content/uploads/2014/11/IMG_5124.jpg" loading="lazy" alt="ザンビア、ヴィクトリアの滝">
+              <h3>アヒョン</h3>
+              <p>
+                  ザンビアのヴィクトリアの滝は、ザンベジ川に位置する世界最大級の滝で、
+                  その壮大な規模と美しさから「雷鳴の煙」とも呼ばれています。
+                  幅約1,708メートル、高さ約108メートルの滝は、ユネスコの世界遺産に登録されており、
+                  絶え間ない水煙が特徴です。
+              </p>
+          </div>
+          <div class="sub-content">
+              <img src="https://travel.south-africa.jp/wp-content/uploads/2022/02/RobbenIsland.jpg" loading="lazy" alt="南アフリカ、ロベン島">
+              <h3>ラミ</h3>
+              <p>
+                  南アフリカのロベン島は、ケープタウン沖に位置する島で、かつて政治犯の収容所として使用されていました。
+                  ネルソン・マンデラが18年間投獄されていたことで有名です。
+                  アパルトヘイト時代の象徴的な遺産として、1999年にユネスコの世界遺産に登録されました。
+              </p>
+          </div>
+          <div class="sub-content">
+              <img src="https://cdn.mappr.co/wp-content/uploads/2023/08/Ethiopia-church-saint-george-amharic-bete-giyorgis.jpg?w=1536&h=1024&scale.option=fill&cw=1536&ch=1024&cx=center&cy=center" loading="lazy" alt="エチオピア、ラリベラの岩窟教会群">
+              <h3>ローラ</h3>
+              <p>
+                  エチオピアのラリベラの岩窟教会群は、12世紀から13世紀にかけて建造された11の岩窟教会で構成されています。
+                  これらの教会は、一枚岩を掘り抜いて作られたもので、
+                  キリスト教エチオピアの宗教的中心地です。ユネスコの世界遺産に登録され、
+                  その壮大な建築と宗教的な重要性が評価されています。
+              </p>
+          </div>
+          <div class="sub-content">
+              <img src="https://www.letribunaldunet.fr/wp-content/uploads/2018/11/gal-2367762-1200x632.jpg" loading="lazy" alt="マリ、ティムブクトゥ">
+              <h3>チキータ</h3>
+              <p>
+                  マリのティムブクトゥは、西アフリカの歴史的な都市で、中世にはイスラム学問と交易の中心地として栄えました。
+                  14世紀から16世紀にかけて建てられたモスクやマドラサがあり、
+                  その中にはジンガリベリ・モスクやサンコーレ・モスクが含まれます。
+              </p>
+          </div>
+          
+      </div>
+  </div>
+  
 
-
-
+  <!-- Footer -->
     <footer class="footer">
         <small>&copy; 2024 自己紹介</small>
     </footer>
 
 
+
+  <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/srid2.js"></script>
+    <script src="js/boot.js"></script>
 </body>
+
 </html>

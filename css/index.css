@@ -1,0 +1,26 @@
+
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  .section-bg {
+    background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+  }
+  
+
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    color: #345676;
+  }
+  
+
