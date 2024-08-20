@@ -1,3 +1,35 @@
+/* Base style */
+iframe {
+  width: 100%;
+  height: auto;
+  max-width: 560px; /* Maintain the aspect ratio */
+  aspect-ratio: 16/9;
+  border: none;
+  padding: 1rem;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+  iframe {
+    max-width: 720px;
+  }
+}
+
+/* For extra-large screens */
+@media (min-width: 1200px) {
+  iframe {
+    max-width: 960px;
+  }
+}
+
+
+
+/* 例: 全ての段落の文字を大きくする */
+p {
+  font-size: 20px;
+}
+
+
 .tab-pane.active {
   text-align: center;
   padding-left: 1rem;
@@ -96,6 +128,10 @@
       padding: 1rem; /* 内部余白を1remに設定 */
   }
 }
+.sub-content img {
+  height: 280px; /* 画像の高さを150pxに設定 */
+}
+
 
 /* 画面サイズが480px以下の場合 */
 @media (max-width: 480px) {
@@ -114,6 +150,6 @@
   }
 
   .sub-content img {
-      height: 150px; /* 画像の高さを150pxに設定 */
+      height: 300px; /* 画像の高さを150pxに設定 */
   }
 }

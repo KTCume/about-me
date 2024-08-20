@@ -1,0 +1,89 @@
+/*お問い合わせ*/
+.contact-form-container {
+    background-color: #f3eded;
+    padding: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 2000px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-top: 0;
+    padding: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* 画面サイズが1200px以下の場合 */
+@media (max-width: 1200px) {
+    .contact-form-container {
+      padding: 150px;
+    }
+  }
+  
+  /* 画面サイズが768px以下の場合 */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 100px;
+    }
+  
+    h2 {
+      padding: 1.5rem;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
+  /* 画面サイズが576px以下の場合 */
+  @media (max-width: 576px) {
+    .contact-form-container {
+      padding: 50px;
+    }
+  
+    h2 {
+      padding: 1rem;
+      font-size: 18px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
