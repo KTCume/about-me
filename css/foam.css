@@ -74,7 +74,7 @@
   /* 画面サイズが576px以下の場合 */
   @media (max-width: 576px) {
     .contact-form-container {
-      padding: 50px;
+      padding: 110px;
     }
   
     h2 {
