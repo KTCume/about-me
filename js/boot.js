@@ -1,4 +1,4 @@
-// 世界遺産ページのタブメニュー
+// KPOPページのタブメニュー
 document.addEventListener('DOMContentLoaded', () => {
   // タブメニューを初期化する関数
   const initializeTabs = (containerId) => {
