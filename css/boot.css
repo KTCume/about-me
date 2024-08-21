@@ -27,7 +27,14 @@ iframe {
 /* 例: 全ての段落の文字を大きくする */
 p {
   font-size: 20px;
+  display: inline-block; /* テキストを左揃えで中央に寄せるため */
+    text-align: left; /* テキストの改行を左側から始める */
+    max-width: 800px; /* テキストが広がりすぎないように */
+    padding: 0 10px; /* 左右に余白を追加 */
+    margin: 0 auto; /* 中央揃えのための自動マージン */
+    margin-block: 1rem;
 }
+
 
 
 .tab-pane.active {
@@ -79,6 +86,7 @@ p {
   font-size: 20px; /* フォントサイズを20pxに設定 */
   text-align: center; /* 文字を中央揃え */
   font-weight: bold; /* 太字に設定 */
+  margin-top: 2rem;
 }
 
 .sub-content-container {

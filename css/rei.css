@@ -1,0 +1,74 @@
+.space {
+    display: flex;
+    justify-content: flex-start; /* 画像を左端に寄せる */
+    align-items: flex-end;       /* 画像を下端に寄せる */
+    height: auto;          
+    flex-wrap: wrap;             /* 画像とテキストを同じ行に配置 */
+}
+
+.space img {
+    max-width: 50%; /* デフォルトの画像サイズ */
+    height: auto;   
+    background-position: center center;
+    object-fit: cover;
+    padding-block: 3rem;
+    padding-right: 1rem; /* テキストとの間に余白を作る */
+}
+
+.space p {
+    padding-left: 0;      /* 左余白をリセット */
+    flex: 1;              /* テキストを画像の右側に配置 */
+    align-self: center;   /* テキストを中央に寄せる */
+}
+
+/* 小さい画面（スマートフォンなど） */
+@media (max-width: 600px) {
+    .space {
+        justify-content: center; /* 画像を中央に配置 */
+        align-items: center;     /* テキストと画像を中央揃え */
+        text-align: center;      /* 全体を中央揃え */
+    }
+    
+    .space img {
+        max-width: 100%; /* 画像を大きく表示 */
+        padding-right: 0; /* 右余白をリセット */
+    }
+
+    .space p {
+        flex-basis: 100%;  /* テキストを画像の下に移動 */
+        text-align: center; /* テキストを中央揃え */
+    }
+}
+
+/* 中くらいの画面（タブレットなど） */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .space img {
+        max-width: 60%; /* 画像の大きさを少し大きくする */
+    }
+
+    .space p {
+        flex-basis: auto; /* テキストを画像の横に戻す */
+    }
+}
+
+/* 大きい画面（デスクトップなど） */
+@media (min-width: 1025px) {
+    .space img {
+        max-width: 40%; /* 画像を小さめに表示 */
+    }
+
+    .space p {
+        flex-basis: auto; /* テキストを画像の横に配置 */
+    }
+}
+
+.space {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
