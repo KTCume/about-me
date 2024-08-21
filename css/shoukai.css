@@ -10,6 +10,7 @@
     height: auto;    /* 高さは自動調整 */
 }
 
+
 /* スマートフォンなどの小さい画面用のスタイル */
 @media (max-width: 600px) {
     .space img {
