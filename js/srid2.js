@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
   mousewheel: true, // マウスホイールによるスクロールを有効にする
   keyboard: true, // キーボードによる操作を有効にする
   autoplay: { // 自動再生を有効にする
-    delay: 3800, // スライドが切り替わるまでの待ち時間（ミリ秒）
+    delay: 4000, // スライドが切り替わるまでの待ち時間（ミリ秒）
     disableOnInteraction: false, // ユーザー操作後も自動再生を続ける
   },
 });

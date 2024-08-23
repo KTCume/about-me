@@ -1,0 +1,19 @@
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  
+  section {
+    padding: 60px 0;
+    background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+  }
+
+  .section-title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    color: #345676;
+    margin: 0 auto; /* 中央揃えのための自動マージン */
+    text-align: center; /* テキストを中央に揃える */
+}
