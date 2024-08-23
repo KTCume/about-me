@@ -9,6 +9,13 @@ iframe {
 }
 
 /* For larger screens */
+@media (min-width: 1024px) {
+  iframe {
+    max-width: 720px;
+  }
+}
+
+/* For larger screens */
 @media (min-width: 768px) {
   iframe {
     max-width: 720px;
@@ -118,26 +125,6 @@ p {
   width: 100%; /* 画像の幅を100%に設定 */
   height: 200px; /* 画像の高さを200pxに設定 */
   object-fit: cover; /* 画像を要素に合わせてトリミング */
-}
-
-/* 画面サイズが768px以下の場合 */
-@media (max-width: 1024px) {
-  .sub-content {
-      flex: 0 0 calc(50% - 1rem); /* 横に2つ並べるための幅 */
-  }
-
-  .tab-menu li {
-      font-size: medium; /* フォントサイズを中に設定 */
-      padding: 8px 16px; /* 内部余白を小さく設定 */
-  }
-
-  .tab-pane.active h2 {
-      font-size: 18px; /* フォントサイズを18pxに設定 */
-      padding: 1rem; /* 内部余白を1remに設定 */
-  }
-}
-.sub-content img {
-  height: 280px; /* 画像の高さを150pxに設定 */
 }
 
 /* 画面サイズが768px以下の場合 */
