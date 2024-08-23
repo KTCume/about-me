@@ -6,7 +6,7 @@ iframe {
   aspect-ratio: 16/9; /* 16:9のアスペクト比を指定 */
   border: none; /* 枠線を非表示にする */
   padding: 0; /* iframe自身の余白は0に設定 */
-  align-items: center; /* 中央に配置 */
+  margin: 0 auto; /* 中央揃えのための自動マージン */
 }
 
 /* 大きな画面向けのスタイル */
