@@ -1,4 +1,10 @@
-
+/* 親コンテナを縦に並べるフレックスボックスに設定 */
+.tab-pane active {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 中央に配置 */
+  padding: 1rem;
+}
 
 /* 基本スタイル */
 iframe {
@@ -8,8 +14,6 @@ iframe {
   aspect-ratio: 16/9; /* 16:9のアスペクト比を指定 */
   border: none; /* 枠線を非表示にする */
   padding: 0; /* iframe自身の余白は0に設定 */
-  justify-content: center; /* コンテンツを水平中央に配置 */
-  margin-right: 10rem;
 }
 
 /* 大きな画面向けのスタイル */
@@ -23,23 +27,20 @@ iframe {
 @media (min-width: 1200px) {
   iframe {
     max-width: 960px; /* 画面幅が1200px以上の場合の最大幅を960pxに設定 */
-    justify-content: center; /* コンテンツを水平中央に配置 */
   }
 }
+
 
 
 
 /* 例: 全ての段落の文字を大きくする */
 p {
   font-size: 20px;
-  display: inline-block; /* テキストを左揃えで中央に寄せるため */
-  text-align: left; /* テキストの改行を左側から始める */
   max-width: 800px; /* テキストが広がりすぎないように */
   padding: 0 10px; /* 左右に余白を追加 */
   margin: 0 auto; /* 中央揃えのための自動マージン */
-  margin-block: 1rem;
+  margin-block: 1rem; /* 段落の上下に余白を追加 */
 }
-
 
 
 .tab-pane.active {
