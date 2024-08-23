@@ -1,6 +1,8 @@
 .tab-pane .active {
+  display: flex; /* フレックスボックスを使用してレイアウト */
   flex-direction: column; /* コンテンツを縦方向に配置 */
   align-items: center; /* コンテンツを中央に配置 */
+  padding: 1rem; /* コンテンツの周囲に1remの余白を追加 */
 }
 
 /* 基本スタイル */
