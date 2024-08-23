@@ -15,24 +15,17 @@ iframe {
   padding: 0; /* iframe自身の余白は0に設定 */
 }
 
+/* 大きな画面向けのスタイル */
+@media (min-width: 768px) {
+  iframe {
+    max-width: 720px; /* 画面幅が768px以上の場合の最大幅を720pxに設定 */
+  }
+}
+
 /* 超大きな画面向けのスタイル */
 @media (min-width: 1200px) {
   iframe {
     max-width: 960px; /* 画面幅が1200px以上の場合の最大幅を960pxに設定 */
-  }
-}
-
-/* For larger screens */
-@media (min-width: 768px) {
-  iframe {
-    max-width: 720px;
-  }
-}
-
-/* For extra-large screens */
-@media (min-width: 1200px) {
-  iframe {
-    max-width: 960px;
   }
 }
 
