@@ -121,6 +121,26 @@ p {
 }
 
 /* 画面サイズが768px以下の場合 */
+@media (max-width: 1024px) {
+  .sub-content {
+      flex: 0 0 calc(50% - 1rem); /* 横に2つ並べるための幅 */
+  }
+
+  .tab-menu li {
+      font-size: medium; /* フォントサイズを中に設定 */
+      padding: 8px 16px; /* 内部余白を小さく設定 */
+  }
+
+  .tab-pane.active h2 {
+      font-size: 18px; /* フォントサイズを18pxに設定 */
+      padding: 1rem; /* 内部余白を1remに設定 */
+  }
+}
+.sub-content img {
+  height: 280px; /* 画像の高さを150pxに設定 */
+}
+
+/* 画面サイズが768px以下の場合 */
 @media (max-width: 768px) {
   .sub-content {
       flex: 0 0 calc(50% - 1rem); /* 横に2つ並べるための幅 */
