@@ -1,10 +1,4 @@
-/* 親コンテナを縦に並べるフレックスボックスに設定 */
-.tab-pane .active {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 中央に配置 */
-  padding: 1rem;
-}
+
 
 /* 基本スタイル */
 iframe {
@@ -14,6 +8,7 @@ iframe {
   aspect-ratio: 16/9; /* 16:9のアスペクト比を指定 */
   border: none; /* 枠線を非表示にする */
   padding: 0; /* iframe自身の余白は0に設定 */
+  align-items: center; /* 中央に配置 */
 }
 
 /* 大きな画面向けのスタイル */
