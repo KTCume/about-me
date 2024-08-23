@@ -141,16 +141,10 @@ body {
   top: 70px; /* 固定ヘッダーの下に表示されるように位置を調整 */
   left: 0; /* 左端に揃える */
   z-index: 1000; /* 他のコンテンツの上に表示するための設定 */
-  
   justify-content: center; /* 横方向に中央揃え */
   align-items: center; /* 縦方向に中央揃え */
   text-align: center; /* テキストを中央揃え */
 }
-
-
-
-
-
 
 
 
