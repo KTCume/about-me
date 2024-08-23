@@ -9,6 +9,7 @@ iframe {
   border: none; /* 枠線を非表示にする */
   padding: 0; /* iframe自身の余白は0に設定 */
   justify-content: center; /* コンテンツを水平中央に配置 */
+  margin-right: 10rem;
 }
 
 /* 大きな画面向けのスタイル */
