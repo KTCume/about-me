@@ -1,3 +1,8 @@
+.tab-pane .active {
+  flex-direction: column; /* コンテンツを縦方向に配置 */
+  align-items: center; /* コンテンツを中央に配置 */
+}
+
 /* 基本スタイル */
 iframe {
   width: 100%; /* iframeの幅を100%に設定 */
