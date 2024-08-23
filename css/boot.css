@@ -7,6 +7,7 @@ iframe {
   border: none; /* 枠線を非表示にする */
   padding: 0; /* iframe自身の余白は0に設定 */
   align-items: center; /* 中央に配置 */
+  flex-direction: column; /* コンテンツを縦方向に配置 */
 }
 
 /* 大きな画面向けのスタイル */
