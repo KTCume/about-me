@@ -1,35 +1,7 @@
 /* デフォルト設定: 画像は幅100%、高さ自動調整 */
 .space img {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    padding-top: 0.5rem;
+    margin-top: 5rem;
 }
-
-/* スクリーンが1300px以上の場合 */
-@media (min-width: 1200px) {
-    .space img {
-        width: 100vw;
-        height: 130vh; /* 高さを130vhに設定 */
-        margin-top: 0.5rem;
-    }
-}
-
-/* スクリーンが800px以上1300px未満の場合 */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .space img {
-        width: 100vw;
-        height: 130vh; /* 高さを110vhに設定 */
-        margin-top: 0.5rem;
-    }
-}
-
-/* スクリーンが800px未満の場合 */
-@media (max-width: 767px) {
-    .space img {
-        width: 100vw;
-        height: 50vh; /* 高さを100vhに設定 */
-        margin-top: 0.5rem;
-    }
-}
-

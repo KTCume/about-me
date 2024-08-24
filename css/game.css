@@ -168,7 +168,7 @@
 }
 
 /* 画面サイズが768px以下の場合 */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .bau-item, .bau-item3 {
     flex-direction: column; /* 縦に並べる */
     align-items: center; /* 中央揃え */
@@ -176,7 +176,7 @@
   }
   
   .bau-container h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .bau-text {
@@ -190,9 +190,9 @@
 }
 
 /* 画面サイズが480px以下の場合 */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .bau-container h1 {
-    font-size: 45px;
+    font-size: 50px;
   }
 
   .bau-text {

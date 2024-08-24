@@ -72,6 +72,7 @@
   .sub-content p {
     padding: 0.5rem; /* 内部余白を0.5remに設定 */
     text-align: start; /* 文字を左揃え */
+    font-size: 20px;
   }
   
   .sub-content img {

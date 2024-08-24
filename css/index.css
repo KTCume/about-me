@@ -3,7 +3,7 @@
   --------------------------------------------------------------*/
   
   section {
-    padding: 60px 0;
+    padding: 30px 0;
     background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
   }
 
@@ -17,3 +17,10 @@
     margin: 0 auto; /* 中央揃えのための自動マージン */
     text-align: center; /* テキストを中央に揃える */
   }
+
+  /* 画面サイズが480px以下の場合 */
+@media (max-width: 500px) {
+  section {
+    padding: 20px 0;
+  }
+}

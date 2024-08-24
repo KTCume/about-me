@@ -15,7 +15,8 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 90%;
+  margin-top: 5rem;
 }
 
 .swiper-slide {
@@ -35,8 +36,15 @@ body {
 }
 
 /* 画面サイズが480px以下の場合 */
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .swiper {
     height: 70%;
+  }
+}
+
+/* 画面サイズが480px以下の場合 */
+@media (max-width: 500px) {
+  .swiper {
+    height: 50%;
   }
 }
