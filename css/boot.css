@@ -155,7 +155,7 @@ p {
 
 
 /* 画面サイズが480px以下の場合 */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .sub-content {
       flex: 0 0 calc(100% - 1rem); /* 横に1つだけ並べるための幅 */
   }

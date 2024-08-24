@@ -33,3 +33,10 @@ body {
   object-fit: cover;
   background-position: center center;
 }
+
+/* 画面サイズが480px以下の場合 */
+@media (max-width: 480px) {
+  .swiper {
+    height: 70%;
+  }
+}
