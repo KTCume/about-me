@@ -124,6 +124,14 @@ p {
   object-fit: cover; /* 画像を要素に合わせてトリミング */
 }
 
+/* 画面サイズが1024px以上の場合 */
+@media (min-width: 1024px) {
+  .sub-content img {
+      height: 380px; /* 画像の高さを200pxに設定 */
+  }
+}
+
+
 /* 画面サイズが768px以下の場合 */
 @media (max-width: 768px) {
   .sub-content {
@@ -139,9 +147,9 @@ p {
       font-size: 18px; /* フォントサイズを18pxに設定 */
       padding: 1rem; /* 内部余白を1remに設定 */
   }
-}
-.sub-content img {
-  height: 280px; /* 画像の高さを150pxに設定 */
+  .sub-content img {
+      height: 280px; /* 画像の高さを150pxに設定 */
+  }
 }
 
 

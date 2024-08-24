@@ -77,6 +77,18 @@
   }
 
 
+.tab-wio {
+    background-color: #fff;
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を付ける */
+    overflow: hidden; /* コンテンツがはみ出さないようにする */
+    width: 100%; /* 幅を80%に設定 */
+    max-width: 1400px; /* 最大幅を1400pxに制限 */
+    padding: 2rem; /* 内側の余白を設定 */
+    margin: 0 auto; /* 左右の中央に配置 */
+    margin-block: 2rem; /* 上下の余白を設定 */
+}
+
   .bau-container {
     background-color: #fff;
     border-radius: 8px;
@@ -89,6 +101,14 @@
     margin-top: 2rem;
     margin-block: 2rem;
     text-align: center;
+    background-image: url('https://pbs.twimg.com/media/E-Sby4LVgAAtRAu?format=jpg&name=4096x4096');
+    background-size: cover; /* 画像を画面全体に表示 */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    /* 透明なオーバーレイ */
+    background-color: rgba(255, 255, 255, 0.9); /* 白色で50%の透明度 */
+    background-blend-mode: overlay; /* 画像と色を合成 */
+    border: 2px solid #bcb1b1; /* 枠線を黒く、太さを2pxに設定 */
 }
 
 .bau-container {
@@ -123,6 +143,7 @@
 .bau-text h2 {
   text-align: center; /* テキストを中央揃え */
   margin-bottom: 2rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 .bau-item3 {
@@ -162,8 +183,6 @@
     margin-right: 0; /* 右側のマージンをリセット */
     margin-bottom: 1rem; /* 下部にマージンを追加 */
   }
-  
-  
 
   .bau-item img {
     width: 80%; /* 画像の幅を80%に設定 */
