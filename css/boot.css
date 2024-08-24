@@ -15,6 +15,7 @@ iframe {
   aspect-ratio: 16/9; /* 16:9のアスペクト比を指定 */
   border: none; /* 枠線を非表示にする */
   padding: 0; /* iframe自身の余白は0に設定 */
+  margin-block: 2rem;
 }
 
 /* 大きな画面向けのスタイル */
@@ -87,7 +88,7 @@ p {
 .tab-pane.active h2 {
   padding: 2rem; /* 内部余白を2remに設定 */
   color: black; /* 文字色をコーンフラワーブルーに設定 */
-  font-size: 20px; /* フォントサイズを20pxに設定 */
+  font-size: 50px; /* フォントサイズを20pxに設定 */
   text-align: center; /* 文字を中央揃え */
   font-weight: bold; /* 太字に設定 */
   margin-top: 2rem;
@@ -144,7 +145,7 @@ p {
   }
 
   .tab-pane.active h2 {
-      font-size: 18px; /* フォントサイズを18pxに設定 */
+      font-size: 30px; /* フォントサイズを18pxに設定 */
       padding: 1rem; /* 内部余白を1remに設定 */
   }
   .sub-content img {
@@ -165,7 +166,7 @@ p {
   }
 
   .tab-pane.active h2 {
-      font-size: 16px; /* フォントサイズを16pxに設定 */
+      font-size: 30px; /* フォントサイズを16pxに設定 */
       padding: 0.5rem; /* 内部余白をさらに小さく設定 */
   }
 

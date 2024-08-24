@@ -1,49 +1,9 @@
-/* Base style */
-iframe {
-    width: 100%;
-    height: auto;
-    max-width: 560px; /* Maintain the aspect ratio */
-    aspect-ratio: 16/9;
-    border: none;
-    padding: 1rem;
-  }
-  
-  /* For larger screens */
-  @media (min-width: 768px) {
-    iframe {
-      max-width: 720px;
-    }
-  }
-  
-  /* For extra-large screens */
-  @media (min-width: 1200px) {
-    iframe {
-      max-width: 960px;
-    }
-  }
-  
-  
-  
-  /* 例: 全ての段落の文字を大きくする */
-  p {
-    font-size: 20px;
-    display: inline-block; /* テキストを左揃えで中央に寄せるため */
-      text-align: left; /* テキストの改行を左側から始める */
-      max-width: 800px; /* テキストが広がりすぎないように */
-      padding: 0 10px; /* 左右に余白を追加 */
-      margin: 0 auto; /* 中央揃えのための自動マージン */
-      margin-block: 1rem;
-  }
-  
-  
-  
   .tab-pane.active {
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
-  
+
   .tab-menu {
     display: flex; /* フレックスボックスで配置 */
     list-style: none; /* リストスタイルを無しに設定 */
@@ -83,7 +43,7 @@ iframe {
   .tab-pane.active h2 {
     padding: 2rem; /* 内部余白を2remに設定 */
     color: black; /* 文字色をコーンフラワーブルーに設定 */
-    font-size: 20px; /* フォントサイズを20pxに設定 */
+    font-size: 50px; /* フォントサイズを20pxに設定 */
     text-align: center; /* 文字を中央揃え */
     font-weight: bold; /* 太字に設定 */
     margin-top: 2rem;
@@ -139,7 +99,7 @@ iframe {
     }
   
     .tab-pane.active h2 {
-        font-size: 18px; /* フォントサイズを18pxに設定 */
+        font-size: 30px; /* フォントサイズを18pxに設定 */
         padding: 1rem; /* 内部余白を1remに設定 */
     }
   
@@ -160,7 +120,7 @@ iframe {
     }
   
     .tab-pane.active h2 {
-        font-size: 16px; /* フォントサイズを16pxに設定 */
+        font-size: 30px; /* フォントサイズを16pxに設定 */
         padding: 0.5rem; /* 内部余白をさらに小さく設定 */
     }
   
