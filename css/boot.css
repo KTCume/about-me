@@ -18,6 +18,26 @@ iframe {
   margin-block: 2rem;
 }
 
+/* コンテナのスタイル */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* 動画同士の間隔 */
+  justify-content: center;
+}
+
+/* 各動画のスタイル */
+.video-container iframe {
+  flex: 1 1 calc(50% - 1rem); /* 各iframeを50%幅で表示し、間隔分を引く */
+  max-width: 560px;
+}
+
+@media (max-width: 500px) {
+  .video-container iframe {
+  flex: 0 0 calc(100% - 1rem); /* 横に1つだけ並べるための幅 */
+  }
+}
+
 /* 大きな画面向けのスタイル */
 @media (min-width: 768px) {
   iframe {
