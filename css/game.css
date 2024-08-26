@@ -43,11 +43,41 @@
   .tab-pane.active h2 {
     padding: 2rem; /* 内部余白を2remに設定 */
     color: black; /* 文字色をコーンフラワーブルーに設定 */
-    font-size: 20px; /* フォントサイズを20pxに設定 */
     text-align: center; /* 文字を中央揃え */
     font-weight: bold; /* 太字に設定 */
     margin-top: 2rem;
   }
+
+  .tab-pane  img {
+    width: 60%;
+  }
+
+  .tab-link::before { 
+  content: "";
+  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_attacker.png.webp");
+  display: inline-block; /* インラインブロックで表示 */
+  width: 40px; /* 幅を指定 */
+  height: 40px; /* 高さを指定 */
+  margin-right: 10px; /* 右に余白を追加 */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* z-index を効かせるために position を指定 */
+  }
+  
+/* それぞれの画像を指定 */
+.tab-link-1::before {
+  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_attacker.png.webp");
+}
+
+.tab-link-2::before {
+  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_getter.png.webp"); /* 画像2のURL */
+}
+
+.tab-link-3::before {
+  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_defender.png.webp"); /* 画像3のURL */
+}
+
 
 /* 画面サイズが768px以下の場合 */
 @media (max-width: 768px) {
@@ -59,6 +89,16 @@
     .tab-pane.active h2 {
         font-size: 18px; /* フォントサイズを18pxに設定 */
         padding: 1rem; /* 内部余白を1remに設定 */
+    }
+
+    .tab-link::before {
+      width: 20px;
+      height: 20px;
+    }
+
+    .video iframe {
+      width: 600px;
+      height: 600px;
     }
   }
 
@@ -73,6 +113,11 @@
     .tab-pane.active h2 {
         font-size: 16px; /* フォントサイズを16pxに設定 */
         padding: 0.5rem; /* 内部余白をさらに小さく設定 */
+    }
+
+    .video iframe {
+      width: 400px;
+      height: 400px;
     }
   }
 
@@ -192,7 +237,7 @@
 /* 画面サイズが480px以下の場合 */
 @media (max-width: 500px) {
   .bau-container h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .bau-text {
