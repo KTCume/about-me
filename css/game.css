@@ -108,8 +108,7 @@
     }
 
     .video iframe {
-      width: 600px;
-      height: 600px;
+      padding: 1.5rem;
     }
 
     .tab-pane.active p {
@@ -128,11 +127,6 @@
     .tab-pane.active h2 {
         font-size: 20px; /* フォントサイズを16pxに設定 */
         padding: 0.5rem; /* 内部余白をさらに小さく設定 */
-    }
-
-    .video iframe {
-      width: 400px;
-      height: 400px;
     }
 
     .tab-pane.active p {
