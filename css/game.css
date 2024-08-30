@@ -106,16 +106,10 @@
       width: 20px;
       height: 20px;
     }
-
-    .video iframe {
-      width: 600px;
-      height: 600px;
-    }
-
     .tab-pane.active p {
-      font-size: 20px;
+          font-size: 20px;
     }
-  }
+}
 
   /* 画面サイズが480px以下の場合 */
   @media (max-width: 480px) {
