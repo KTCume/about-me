@@ -118,7 +118,7 @@
 }
 
 /* 画面サイズが480px以下の場合 */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .tab-menu li {
       font-size: 0.875rem; /* small */
       padding: 6px 12px;
@@ -154,7 +154,7 @@
   overflow: hidden;
   width: 100%;
   max-width: 1400px;
-  padding: 5rem;
+  padding: 1rem;
   margin: 0 auto;
   margin-top: 2rem;
   margin-block: 2rem;
