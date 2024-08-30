@@ -226,6 +226,15 @@
 }
 
 /* 画面サイズが768px以下の場合 */
+@media (max-width: 1024px) {
+  .bau-item, .bau-item3 {
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
+    text-align: center; /* テキストを中央揃え */
+  }
+  }
+
+/* 画面サイズが768px以下の場合 */
 @media (max-width: 800px) {
   .bau-item, .bau-item3 {
     flex-direction: column; /* 縦に並べる */
