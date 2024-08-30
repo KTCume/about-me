@@ -22,8 +22,11 @@
     color: rgb(0, 0, 0); /* 文字色をロイヤルブルーに設定 */
     font-weight: bold; /* 太字に設定 */
     font-size: large; /* フォントサイズを大に設定 */
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦方向に配置 */
+    align-items: center; /* 中央揃え */
   }
-  
+
   .tab-menu .active {
     background-color: #fff; /* アクティブなタブの背景色を白に設定 */
     border-bottom: 1px solid transparent; /* ボーダーの下部を透明に設定 */
@@ -58,37 +61,28 @@
   }
 
   .tab-link::before { 
-  content: "";
-  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_attacker.png.webp");
-  display: inline-block; /* インラインブロックで表示 */
-  width: 40px; /* 幅を指定 */
-  height: 40px; /* 高さを指定 */
-  margin-right: 10px; /* 右に余白を追加 */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; /* z-index を効かせるために position を指定 */
+    content: "";
+    background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_attacker.png.webp");
+    display: block; /* ブロック表示に設定 */
+    width: 40px; /* 幅を指定 */
+    height: 40px; /* 高さを指定 */
+    margin-bottom: 10px; /* 下に余白を追加 */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
-/* それぞれの画像を指定 */
-.tab-link-1::before {
-  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_attacker.png.webp");
-}
-
-.tab-link-2::before {
-  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_getter.png.webp"); /* 画像2のURL */
-}
-
-.tab-link-3::before {
-  background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_defender.png.webp"); /* 画像3のURL */
-}
-
-/* 画面サイズが768px以下の場合 */
-@media (max-width: 768px) {
-  .tab-pane.active p {
-    font-size: 20px;
+  .tab-link-1::before {
+    background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_attacker.png.webp");
   }
-}
+  
+  .tab-link-2::before {
+    background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_getter.png.webp");
+  }
+  
+  .tab-link-3::before {
+    background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_defender.png.webp");
+  }
 
 /* 画面サイズが768px以下の場合 */
 @media (max-width: 768px) {
