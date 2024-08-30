@@ -108,7 +108,7 @@
     }
 
     .video iframe {
-      width: 100%;
+      width: 500%;
       height: 50%;
     }
 
@@ -234,7 +234,7 @@
 .video {
     position: relative;
     width: 100%;
-    max-width: 560px; /* もし最大幅を制限したい場合 */
+    max-width: 665px; /* もし最大幅を制限したい場合 */
     margin: 0 auto;
 }
 
