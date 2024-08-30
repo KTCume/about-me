@@ -283,8 +283,4 @@
   .bau-item img {
     width: 100%; /* 画像の幅を100%に設定 */
   }
-
-  .video iframe {
-    height: 50%;
-  }
 }
