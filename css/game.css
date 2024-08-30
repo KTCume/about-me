@@ -45,7 +45,12 @@
     color: black; /* 文字色をコーンフラワーブルーに設定 */
     text-align: center; /* 文字を中央揃え */
     font-weight: bold; /* 太字に設定 */
+    font-size: 40px;
     margin-top: 2rem;
+  }
+
+  .tab-pane.active p {
+    font-size: 30px;
   }
 
   .tab-pane  img {
@@ -78,6 +83,12 @@
   background-image: url("https://opbr.bn-ent.net/assets/data/webp/howto/icon_l_defender.png.webp"); /* 画像3のURL */
 }
 
+/* 画面サイズが768px以下の場合 */
+@media (max-width: 768px) {
+  .tab-pane.active p {
+    font-size: 20px;
+  }
+}
 
 /* 画面サイズが768px以下の場合 */
 @media (max-width: 768px) {
@@ -87,7 +98,7 @@
     }
   
     .tab-pane.active h2 {
-        font-size: 18px; /* フォントサイズを18pxに設定 */
+        font-size: 24px; /* フォントサイズを18pxに設定 */
         padding: 1rem; /* 内部余白を1remに設定 */
     }
 
@@ -100,6 +111,10 @@
       width: 600px;
       height: 600px;
     }
+
+    .tab-pane.active p {
+      font-size: 20px;
+    }
   }
 
   /* 画面サイズが480px以下の場合 */
@@ -111,13 +126,17 @@
     }
   
     .tab-pane.active h2 {
-        font-size: 16px; /* フォントサイズを16pxに設定 */
+        font-size: 20px; /* フォントサイズを16pxに設定 */
         padding: 0.5rem; /* 内部余白をさらに小さく設定 */
     }
 
     .video iframe {
       width: 400px;
       height: 400px;
+    }
+
+    .tab-pane.active p {
+      font-size: 18px;
     }
   }
 
