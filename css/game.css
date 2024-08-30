@@ -253,12 +253,13 @@
 /* 画面サイズが500px以下の場合 */
 @media (max-width: 500px) {
   .bau-container h1 {
-      font-size: 2.8125rem; /* 45px */
+      font-size: 40px; /* 45px */
   }
 
   .bau-text {
       margin-right: 0;
       margin-bottom: 0.5rem;
+      font-size: 18px;
   }
 
   .bau-item img {
